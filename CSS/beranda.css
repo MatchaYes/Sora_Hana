@@ -334,6 +334,19 @@ body {
         padding: 25px 15px !important;
     }
 
+    .song-container{
+        display: flex;
+        flex-direction: column;
+        align-item: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .song-vidio{
+        width: 100%;
+        max-width: 420px;
+    }
+
     .song-video iframe {
         width: 100% !important;
         height: 210px !important;
@@ -348,10 +361,12 @@ body {
 
     .song-title {
         font-size: 26px !important;
+        line-height: 1.3;
     }
 
     .song-desc {
         font-size: 14px !important;
     }
 }
+
 
