@@ -79,26 +79,31 @@
     }
 
     .iframe-wrap{
-      position:relative;
-      width:100%;
-      padding-bottom:56.25%;
-      height:0;
-      overflow:hidden;
-      border-radius:10px;
+      position: relative;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      padding-bottom: 90%; 
     }
 
     .iframe-wrap iframe{
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      border:0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
-    @media (max-width:720px){
-      .iframe-wrap{padding-bottom:80%} 
+    @media (min-width: 720px){
+      .iframe-wrap{padding-bottom:70%} 
       header h1{font-size:18px}
+    }
+
+    @media (min-width: 1000px){
+      .iframe-wrap{padding-bottom:65%}
+      header h1{font-size:22px}
     }
   </style>
 </head>
@@ -111,7 +116,7 @@
       </div>
     </header>
 
-    <a href="../index.html" class="btn-back">Kembali ke Beranda</a>
+    <a href="/index.html" class="btn-back">Kembali ke Beranda</a>
 
     <div class="card">
       <div class="iframe-wrap" id="iframeWrap">
@@ -128,17 +133,18 @@
   </div>
 
   <script>
-    function setDesktopHeight() {
-      const w = window.innerWidth;
+    function setIframeHeight() {
       const frame = document.getElementById('gcalFrame');
+      const wrap = document.getElementById('iframeWrap');
+      const w = window.innerWidth;
+
       if (w > 1000) frame.style.height = '680px';
-      else if (w > 700) frame.style.height = '620px';
-      else frame.style.height = '800px';
+      else if (w > 720) frame.style.height = '620px';
+      else frame.style.height = wrap.offsetWidth * 1.2 + 'px'; 
     }
-    setDesktopHeight();
-    window.addEventListener('resize', setDesktopHeight);
+
+    window.addEventListener('load', setIframeHeight);
+    window.addEventListener('resize', setIframeHeight);
   </script>
 </body>
 </html>
-
-
