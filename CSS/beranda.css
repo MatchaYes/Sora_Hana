@@ -104,7 +104,7 @@ body {
     color: white;
     border-radius: 18px;
     font-family: "Playfair Display", serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(70, 130, 200, 0.25);
@@ -296,10 +296,10 @@ body {
     }
 
     .section-actions .btn {
-        max-width: 160px;
+        max-width: 200px;
         text-align: center;
-        font-size: 15px !important;
-        padding: 10px 0 !important;
+        font-size: 17px !important;
+        padding: 15px 0 !important;
         border-radius: 15px;
     }
 
@@ -369,6 +369,7 @@ body {
         font-size: 14px !important;
     }
 }
+
 
 
 
