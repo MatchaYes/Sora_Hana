@@ -99,7 +99,7 @@ body {
 }
 
 .section-actions .btn {
-    padding: 20px 24px;
+    padding: 17px 21px;
     background: linear-gradient(135deg, #89bffc, #5f9eff);
     color: white;
     border-radius: 18px;
@@ -298,8 +298,8 @@ body {
     .section-actions .btn {
         max-width: 180px;
         text-align: center;
-        font-size: 14px !important;
-        padding: 15px 0 !important;
+        font-size: 12px !important;
+        padding: 13px 0 !important;
         border-radius: 15px;
     }
 
@@ -369,6 +369,7 @@ body {
         font-size: 14px !important;
     }
 }
+
 
 
 
