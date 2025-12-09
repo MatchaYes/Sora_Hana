@@ -296,9 +296,9 @@ body {
     }
 
     .section-actions .btn {
-        max-width: 200px;
+        max-width: 180px;
         text-align: center;
-        font-size: 17px !important;
+        font-size: 14px !important;
         padding: 15px 0 !important;
         border-radius: 15px;
     }
@@ -369,6 +369,7 @@ body {
         font-size: 14px !important;
     }
 }
+
 
 
 
