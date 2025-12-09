@@ -100,14 +100,15 @@ body {
 
 .section-actions .btn {
     padding: 16px 20px;
-    background: linear-gradient(135deg, #4a90e2, #2f67c7);
+    background: linear-gradient(135deg, #89bffc, #5f9eff);
     color: white;
-    border-radius: 35px;
-    font-size: 26px;
-    font-weight: 700;
+    border-radius: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(74, 144, 226, 0.35);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(70, 130, 200, 0.25);
+    transition: all 0.25s ease;
     letter-spacing: 1px;
 }
 
@@ -289,17 +290,17 @@ body {
     }
 
     .section-actions {
-        flex-direction: column;
-        gap: 20px !important;
-        padding: 10px 15px !important;
+        flex-direction: row;
+        gap: 12px !important;
+        padding: 15px !important;
     }
 
     .section-actions .btn {
-        width: 100%;
+        max-width: 160px;
         text-align: center;
-        font-size: 20px !important;
-        padding: 14px 20px !important;
-        border-radius: 25px;
+        font-size: 15px !important;
+        padding: 10px 0 !important;
+        border-radius: 15px;
     }
 
     .social {
@@ -368,5 +369,6 @@ body {
         font-size: 14px !important;
     }
 }
+
 
 
