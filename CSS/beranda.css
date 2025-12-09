@@ -337,10 +337,13 @@ body {
     .song-video iframe {
         width: 100% !important;
         height: 210px !important;
+        border-radius: 12px;
     }
 
     .song-info {
         text-align: center;
+        width: 100%;
+        max-width: 450px;
     }
 
     .song-title {
@@ -351,3 +354,4 @@ body {
         font-size: 14px !important;
     }
 }
+
