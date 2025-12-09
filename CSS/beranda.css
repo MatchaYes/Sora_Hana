@@ -269,6 +269,20 @@ body {
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .display-section {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .display-img {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
@@ -278,7 +292,6 @@ body {
 
     .hero-content {
         max-width: 100%;
-        margin-left: 0;
     }
 
     .hero-img img {
@@ -294,15 +307,15 @@ body {
     }
 
     .social {
-        justify-content: center;
-        text-align: center;
+        justify-content: center !important;
+        text-align: center !important;
         width: 100%;
-        display: flex;
+        display: flex;       
     }
 
     .song-section {
         padding: 50px 30px;
-        background: #e3f1ff;
+        background: #e3f1ff; 
     }
 
     .song-container {
@@ -312,54 +325,35 @@ body {
     }
 
     .song-video iframe {
-        width: 100%;
+        width: 600px;
         height: 320px;
+        border-radius: 12px;
     }
 
     .song-info {
         max-width: 100%;
     }
 
+    .song-label {
+        color: #5a8ccf; 
+    }
+
     .song-title {
         font-size: 32px;
+        color: #2a4d8f; 
     }
 
     .song-desc {
         font-size: 16px;
+        color: #4873b7; 
     }
 
     .song-btn {
+        background: #3f6ecb; 
         padding: 12px 28px;
         font-size: 16px;
     }
-}
-
-@media (max-width: 768px) {
-    .display-section {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
-
-    .display-item {
-        width: 90%;
-        height: auto;
-    }
-
-    .display-img {
-        width: 100%;
-        height: 230px;
-    }
-
-    .social {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .song-video iframe {
-        width: 100%;
-        height: 240px;
-    }
+    
 }
 
 @media (max-width: 600px) {
@@ -387,29 +381,120 @@ body {
         width: 100%;
     }
 
-    .section-actions {
-        flex-direction: column;
-        gap: 20px;
-    }
+.section-actions {
+    flex-direction: row;
+    gap: 12px;
+    padding: 0 20px;
+}
 
-    .section-actions .btn {
-        font-size: 20px;
-        padding: 14px 20px;
-    }
+.section-actions .btn {
+    flex: 1;
+    max-width: 160px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 10px;
+}
+
 
     .grid {
         grid-template-columns: 1fr;
     }
 
+    .social {
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100%;
+        display: flex;       /* penting! */
+    }
+
+    .song-section {
+        padding: 50px 20px;
+        background: #e3f1ff; /* biru muda */
+    }
+
+    .song-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
     .song-video iframe {
+        width: 100%;
         height: 220px;
+        border-radius: 12px;
+    }
+
+    .song-info {
+        max-width: 100%;
+    }
+
+    .song-label {
+        color: #5a8ccf; /* biru label */
     }
 
     .song-title {
-        font-size: 28px;
+        font-size: 32px;
+        color: #2a4d8f; /* biru tua */
     }
 
     .song-desc {
-        font-size: 15px;
+        font-size: 16px;
+        color: #4873b7; /* biru teks */
+    }
+
+    .song-btn {
+        background: #3f6ecb; /* biru tombol */
+        padding: 12px 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .social {
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100%;
+        display: flex;       /* penting! */
+    }
+
+    .song-section {
+        padding: 50px 20px;
+        background: #e3f1ff; /* biru muda */
+    }
+
+    .song-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .song-video iframe {
+        width: 100%;
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    .song-info {
+        max-width: 100%;
+    }
+
+    .song-label {
+        color: #5a8ccf; /* biru label */
+    }
+
+    .song-title {
+        font-size: 32px;
+        color: #2a4d8f; /* biru tua */
+    }
+
+    .song-desc {
+        font-size: 16px;
+        color: #4873b7; /* biru teks */
+    }
+
+    .song-btn {
+        background: #3f6ecb; /* biru tombol */
+        padding: 12px 28px;
+        font-size: 16px;
     }
 }
